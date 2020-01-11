@@ -1,0 +1,12 @@
+[package]
+name = "piet-winit-direct2d"
+version = "0.1.0"
+authors = ["Markus Røyset <maroider@protonmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+direct2d = "0.2.0"
+raw-window-handle = "0.3.3"
+winit = "0.20.0"
