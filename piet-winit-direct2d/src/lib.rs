@@ -35,7 +35,7 @@ pub fn create_render_target(window: &Window, d2d: &Factory) -> GenericRenderTarg
     HwndRenderTarget::create(&d2d)
         .with_hwnd(hwnd)
         .with_target_type(RenderTargetType::Default)
-        .with_alpha_mode(AlphaMode::Unknown)
+        .with_alpha_mode(AlphaMode::Premultiplied)
         .with_pixel_size(width, height)
         .build()
         .unwrap()
