@@ -1,6 +1,6 @@
 [package]
 name = "piet-winit-direct2d"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["Markus Røyset <maroider@protonmail.com>"]
 edition = "2018"
 
@@ -10,3 +10,22 @@ edition = "2018"
 direct2d = "0.2.0"
 raw-window-handle = "0.3.3"
 winit = "0.20.0"
+
+[dependencies.winapi]
+version = "0.3.8"
+features = [
+    "dxgi",
+    "minwindef",
+    "windef",
+    "winerror",
+    "d2d1",
+    "unknwnbase",
+    "winnt",
+    "winuser"
+]
+
+[dev-dependencies]
+directwrite = "0.1.4"
+piet = "0.0.7"
+piet-direct2d = "0.0.7"
+piet-test = "0.0.7"
